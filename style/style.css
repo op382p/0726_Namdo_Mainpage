@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+/* Reset */
+*{
+    color: #333;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border - box;
+}
+
+a:link {
+    color : #444;
+}
+a:visited {
+    color : #444;
+}
+a:hover {
+    color : #555;
+}
+a:active {
+    color : #555;
+}
+
+body {
+    background-color:#fff;
+}
+img {
+    vertical-align:middle;
+}
+
+ul {
+    list-style:none;
+}
+.flex-container {
+    display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+div#wrap {
+    border : 1px solid#000;
+}
+header#header {
+    border : 1px solid#000;
+}
+main#main {
+    border : 1px solid#000;
+}
+div#slide {
+    border : 1px solid#000;
+}
+div#contents {
+    border : 1px solid#000;
+}
+footer#footer {
+    border : 1px solid#000;
+}
+
+/* div#wrap 시작 */
+div#wrap {
+    width: 1000px;
+    margin: 10px;
+}
+/* div#wrap 끝 */
+
+/* header#header 시작 */
+header#header {
+    width: 200px;
+}
+nav#gnb {
+    /* margin: 10px; */
+    border: 1px solid #000;
+}
+#gnb > ul#mainMenu  {
+    position: relative;
+    margin: 10px;
+    border: 1px solid #08f;
+padding: 10px 0;
+}
+#gnb #mainMenu > li {
+    border: 1px solid #f80;
+    margin: 0 10px;
+}
+#gnb a {
+    width: 150px;
+    height: 40px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #aaa;
+    line-height: 40px;
+    display: inline-block;
+}
+#gnb .mainLi>a {
+    /* 메인메뉴와 서브메뉴 구분 */
+    height: 50px;
+    font-size: 17px;
+    line-height: 50px;
+}
+#gnb ul.subMenu {
+    display: none;
+    position: absolute;
+    left: 163px;
+    top: 0;
+}
+#gnb ul.subMenu li:last-child a{
+    padding-bottom: 160px;
+}
+#gnb .mainLi:hover>a:hover {
+    color: #444;
+    background-color: rgb(0, 128, 255.08);
+}
+#gnb .subMenu a {
+    color: #fff;
+    background-color: rgb(0, 128, 255.08);
+}
+
+#gnb .subMenu a:hover {
+    color: #fff;
+    background-color: rgb(0, 128, 255.08);
+}
+.subLi a {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+/* header#header 끝 */
+
+/* main#main 시작 */
+main#main {
+    flex: 1;
+}
+/* div#slide 시작 */
+div#slide {
+    width: auto;
+    height: 350px;
+}
+/* div#slide 끝 */
+
+/* div#contents 시작 */
+div#contents {
+height: 200px;
+}
+#main #contents > * {
+    flex: 1;
+}
+/* div#contents 끝 */
+
+/* footer#footer 시작 */
+#main footer#footer {
+    height: 100px;
+}
+/* footer#footer 끝 */
+/* main#main 끝 */
